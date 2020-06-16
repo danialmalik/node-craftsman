@@ -1,0 +1,8 @@
+{
+    "scripts":{
+        "test": "npx jasmine-node spec"
+    },
+    "devDependencies": {
+        "jasmine-node": ""
+    }
+}
