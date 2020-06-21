@@ -1,0 +1,8 @@
+{
+    "devDependencies": {
+        "jasmine-node": ""
+    },
+    "scripts": {
+        "test": "npx jasmine-node FileSizeWatcher.spec.js"
+    }
+}
