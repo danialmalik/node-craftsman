@@ -1,0 +1,26 @@
+{
+  "name": "keyword-wrangler",
+  "version": "0.0.1",
+  "description": "A tool to manage keywords",
+  "main": "src/backend/index.js",
+  "scripts": {
+    "test": "jasmine-node --verbose --captureExceptions ./spec/",
+    "dev": "KW_ENV=dev node src/backend/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "bower": "^1.8.8",
+    "db-migrate": "^0.11.11",
+    "mysql": "^2.18.1",
+    "node-dbi": "^0.7.1",
+    "percolator": "^1.5.0"
+  },
+  "devDependencies": {
+    "db-migrate-sqlite3": "^0.4.0",
+    "jasmine-node": "^3.0.0",
+    "request": "^2.88.2",
+    "sqlite3": "^5.0.0"
+  }
+}

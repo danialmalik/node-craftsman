@@ -17,10 +17,10 @@ describe('FilesizeWatcher', function () {
         exec('rm -f ' + path + ' ; touch ' + path, function () {
             watcher = new FilesizeWatcher(path);
 
-            watcher.on('grew', function (gain) {
+            watcher.callbacks['grew'] = function (gain) {
                 expect(gain).toBe(5);
                 done();
-            });
+            };
 
             exec('echo "test" > ' + path, function () { });
 
